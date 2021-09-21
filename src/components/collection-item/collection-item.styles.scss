@@ -1,0 +1,96 @@
+.collection-item {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 900px) {
+    width: 240px;
+    height: 310px;
+  }
+
+  @media (max-width: 750px) {
+    width: 200px;
+    height: 270px;
+  }
+
+  @media (max-width: 550px) {
+    width: 160px;
+    height: 220px;
+  }
+
+  @media (max-width: 420px) {
+    width: 140px;
+    height: 190px;
+  }
+
+  @media (max-width: 390px) {
+    width: 100px;
+    height: 150px;
+  }
+
+  .image {
+    width: 100%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 5px;
+  }
+
+  .custom-button {
+    width: 80%;
+    opacity: 0.7;
+    position: absolute;
+    top: 255px;
+    display: none;
+  }
+
+  @media (max-width: 900px) {
+    .custom-button {
+      width: 60%;
+      top: 155px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    .custom-button {
+      width: 40%;
+      top: 105px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .custom-button {
+      width: 10px;
+      top: 75px;
+    }
+  }
+
+
+
+  &:hover {
+    .image {
+      opacity: 0.8;
+    }
+
+    .custom-button {
+      opacity: 0.85;
+      display: flex;
+    }
+  }
+
+  .collection-footer {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-bottom: 20px;
+
+    .name {
+      margin-bottom: 15px;
+    }
+  }
+}
