@@ -17,6 +17,9 @@
     "reselect": "4.0.0",
     "yarn": "^1.22.11"
   },
+  "engines": {
+    "node": "14.15.0"
+  },
   "devDependencies": {
     "react-scripts": "3.0.0"
   },
